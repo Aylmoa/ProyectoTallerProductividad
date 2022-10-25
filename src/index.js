@@ -10,7 +10,8 @@ const ConvertToJSON=()=>{
         const element = data[i];
         jData.push({
             ...element,
-            date: new Date((element.date - (25567+2)) * 86400 * 1000)
+            date: new Date((element.date - (25567 + 2)) * 86400 * 1000).toDateString()
+          
         })
     }
     console.log(jData);
